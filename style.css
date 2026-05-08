@@ -1,0 +1,418 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    gap:40px;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-left h3{
+    color:#38bdf8;
+    font-size:24px;
+}
+
+.hero-left h1{
+    font-size:64px;
+    margin-top:10px;
+}
+
+.hero-left h2{
+    margin-top:15px;
+    font-size:28px;
+    color:#cbd5e1;
+}
+
+.hero-left p{
+    margin-top:25px;
+    line-height:1.8;
+    color:#94a3b8;
+    max-width:650px;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.primary{
+    background:#38bdf8;
+    color:black;
+}
+
+.secondary{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.primary:hover{
+    transform:translateY(-3px);
+}
+
+.secondary:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+.social-icons{
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+}
+
+.social-icons a{
+    width:50px;
+    height:50px;
+    background:#1e293b;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* PROFILE */
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.profile-card{
+    width:420px;
+    background:#111827;
+    padding:40px;
+    border-radius:25px;
+    border:1px solid #334155;
+}
+
+.circle{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:auto;
+    margin-bottom:25px;
+    border:4px solid #38bdf8;
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.profile-card h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.info-box{
+    margin-bottom:20px;
+    background:#1e293b;
+    padding:15px;
+    border-radius:12px;
+}
+
+.info-box span{
+    color:#38bdf8;
+    font-size:14px;
+}
+
+/* SECTION */
+
+.section{
+    padding:70px 8%;
+}
+
+.section-title{
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:40px;
+    color:#38bdf8;
+}
+
+/* ABOUT */
+
+.about-box{
+    background:#111827;
+    padding:35px;
+    border-radius:20px;
+    line-height:1.9;
+    color:#cbd5e1;
+}
+
+/* TIMELINE */
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.timeline-card{
+    background:#111827;
+    padding:25px;
+    border-radius:18px;
+    border:1px solid #1e293b;
+}
+
+.timeline-card h3{
+    margin-bottom:10px;
+}
+
+.timeline-card span{
+    display:block;
+    margin-top:12px;
+    color:#38bdf8;
+}
+
+/* SKILLS */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#111827;
+    padding:25px;
+    border-radius:18px;
+}
+
+.skill-card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.skill-card p{
+    margin-bottom:10px;
+}
+
+/* PROJECTS */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+}
+
+.project-card span{
+    display:block;
+    margin:15px 0;
+    color:#38bdf8;
+}
+
+/* INTERNSHIPS */
+
+.internship-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.internship-card{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+}
+
+.internship-card span{
+    display:block;
+    margin:15px 0;
+    color:#38bdf8;
+}
+
+.internship-card ul{
+    margin-left:20px;
+    line-height:1.8;
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.achievement-card{
+    background:#111827;
+    padding:25px;
+    border-radius:18px;
+}
+
+/* COURSES */
+
+.course-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.course-card{
+    background:#111827;
+    padding:25px;
+    border-radius:20px;
+}
+
+/* HOBBIES */
+
+.hobbies{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.hobby-card{
+    background:#38bdf8;
+    color:black;
+    padding:15px 25px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+/* CONTACT */
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+}
+
+.contact-card{
+    width:100%;
+    max-width:700px;
+    background:#111827;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+}
+
+.contact-card p{
+    margin-top:15px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+    color:#94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column;
+    }
+
+    .hero-left h1{
+        font-size:48px;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        right:-100%;
+        width:250px;
+        height:100vh;
+        background:#111827;
+        flex-direction:column;
+        padding-top:40px;
+        transition:0.4s;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+}
